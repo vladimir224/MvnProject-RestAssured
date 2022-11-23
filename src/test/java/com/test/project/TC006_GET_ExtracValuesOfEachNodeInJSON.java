@@ -26,6 +26,7 @@ public class TC006_GET_ExtracValuesOfEachNodeInJSON {
         String responseBody = response.getBody().asString();
         System.out.println("Response Body is: " + responseBody);
 
+        //json path
         JsonPath jsonpath=response.jsonPath();
         int page=jsonpath.get("page");
         int perPage=jsonpath.get("per_page");

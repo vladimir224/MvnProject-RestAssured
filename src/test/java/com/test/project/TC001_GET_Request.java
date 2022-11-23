@@ -29,7 +29,7 @@ public class TC001_GET_Request {
         System.out.println("Status code is: "+statusCode);
         Assert.assertEquals(statusCode,200);
 
-        //status line verification
+        //status line validation
         String statusLine=response.statusLine();
         System.out.println("status line is: "+statusLine);
         Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
